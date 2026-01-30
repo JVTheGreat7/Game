@@ -1,3 +1,4 @@
+HEAD
 # PC Parts E-Commerce System
 
 A complete, fully functional PC Parts E-Commerce platform built with PHP, MySQL, Bootstrap, and JavaScript. This system is designed for classroom demonstration and can be graded live.
@@ -384,3 +385,7 @@ For issues or questions, contact the development team or refer to the inline cod
 **Version**: 1.0
 **Last Updated**: January 2026
 **Status**: Production Ready
+
+# Game
+ohaha
+ e28909a520e26f769ecc284b260792b427c1f6fd
