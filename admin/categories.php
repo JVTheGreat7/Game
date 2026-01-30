@@ -2,8 +2,8 @@
 /**
  * Admin - Manage Categories
  */
-require_once '../../config/db.php';
-require_once '../../includes/auth.php';
+require_once '../config/db.php';
+require_once '../includes/auth.php';
 
 requireRole('admin');
 
@@ -104,4 +104,4 @@ $categories = fetchAll($conn->query("SELECT * FROM categories ORDER BY category_
     </div>
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

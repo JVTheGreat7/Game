@@ -2,13 +2,13 @@
 /**
  * Admin Dashboard - Main
  */
-require_once '../../config/db.php';
-require_once '../../includes/auth.php';
+require_once '../config/db.php';
+require_once '../includes/auth.php';
 
 requireRole('admin');
 
 $page_title = 'Admin Dashboard';
-include '../../includes/header.php';
+include '../includes/header.php';
 
 // Get statistics
 $total_users = fetchValue($conn->query("SELECT COUNT(*) FROM users"));
@@ -106,4 +106,4 @@ $total_revenue = fetchValue($conn->query("SELECT SUM(total_amount) FROM orders W
     </div>
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

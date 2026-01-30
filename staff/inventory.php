@@ -2,8 +2,8 @@
 /**
  * Staff - Check Inventory
  */
-require_once '../../config/db.php';
-require_once '../../includes/auth.php';
+require_once '../config/db.php';
+require_once '../includes/auth.php';
 
 requireRole('staff');
 
@@ -114,4 +114,4 @@ $all_inventory = fetchAll($conn->query("
     </div>
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

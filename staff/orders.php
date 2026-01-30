@@ -2,8 +2,8 @@
 /**
  * Staff - Process Orders
  */
-require_once '../../config/db.php';
-require_once '../../includes/auth.php';
+require_once '../config/db.php';
+require_once '../includes/auth.php';
 
 requireRole('staff');
 
@@ -108,4 +108,4 @@ $orders = fetchAll($conn->query("
     </table>
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

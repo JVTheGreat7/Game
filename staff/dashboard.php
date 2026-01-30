@@ -2,13 +2,13 @@
 /**
  * Staff Dashboard - Main
  */
-require_once '../../config/db.php';
-require_once '../../includes/auth.php';
+require_once '../config/db.php';
+require_once '../includes/auth.php';
 
 requireRole('staff');
 
 $page_title = 'Staff Dashboard';
-include '../../includes/header.php';
+include '../includes/header.php';
 
 // Get pending orders
 $pending_orders = fetchAll($conn->query("
@@ -66,4 +66,4 @@ $paid_count = $paid_orders[0]['count'] ?? 0;
     </div>
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

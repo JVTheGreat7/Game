@@ -2,8 +2,8 @@
 /**
  * Admin - Manage Users
  */
-require_once '../../config/db.php';
-require_once '../../includes/auth.php';
+require_once '../config/db.php';
+require_once '../includes/auth.php';
 
 requireRole('admin');
 
@@ -77,4 +77,4 @@ $users = fetchAll($conn->query("SELECT * FROM users ORDER BY created_at DESC"));
     </table>
 </div>
 
-<?php include '../../includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
